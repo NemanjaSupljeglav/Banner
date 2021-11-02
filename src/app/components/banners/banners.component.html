@@ -1,0 +1,14 @@
+
+<div class ="banner-container">
+  <!-- <div *ngFor="let banner of banners">
+      <img src="{{banner.FullImageUrl}}" alt="" height="300px" width="300px">
+  </div>-->
+  <div class="sliders">
+  <ng-container *ngFor="let banner of bannersHeader; let i = index">
+      <div class="slider" *ngIf="current == i" @fade>
+          <img class="img" [src]="banner.FullImageUrl">
+      </div>
+
+  </ng-container>
+</div>
+</div>
